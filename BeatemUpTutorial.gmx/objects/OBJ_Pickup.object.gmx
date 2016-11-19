@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>depth = -1 * y;
-PickupSound = SND_FoodPuckup;
+PickupSound = SND_FoodPickup;
 </string>
           </argument>
         </arguments>
@@ -53,7 +53,7 @@ PickupSound = SND_FoodPuckup;
 {
     event_user(0);
     audio_play_sound(PickupSound, 10, false);
-    instance_destroy();
+    instance_destroy()
 }
 </string>
           </argument>
@@ -77,7 +77,8 @@ PickupSound = SND_FoodPuckup;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>//Placeholder code
+</string>
           </argument>
         </arguments>
       </action>

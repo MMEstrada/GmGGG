@@ -10,7 +10,7 @@
     <sound>sound\SND_StrongPunch1</sound>
     <sound>sound\SND_Uppercut</sound>
     <sound>sound\SND_TriplePunch</sound>
-    <sound>sound\SND_FoodPuckup</sound>
+    <sound>sound\SND_FoodPickup</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\SPR_PlayerIdle</sprite>
@@ -19,7 +19,6 @@
     <sprite>sprites\SPR_PlayerStrongPunch</sprite>
     <sprite>sprites\SPR_PlayerHit</sprite>
     <sprite>sprites\SPR_EnemyIdle</sprite>
-    <sprite>sprites\SPR_EnemyWalking</sprite>
     <sprite>sprites\SPR_EnemyHit</sprite>
     <sprite>sprites\SPR_BasicPunch_HitBox</sprite>
     <sprite>sprites\SPR_StrongPunch_HitBox</sprite>
@@ -33,6 +32,7 @@
     <sprite>sprites\SPR_PlayerTriplePunch</sprite>
     <sprite>sprites\SPR_PlayerTriplePunch_HitBox</sprite>
     <sprite>sprites\SPR_Food_Cherry</sprite>
+    <sprite>sprites\SPR_EnemyWalking</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -48,7 +48,7 @@
     <object>objects\ATK_TriplePunch</object>
     <object>objects\OBJ_Pickup</object>
     <object>objects\PKP_Food</object>
-    <object>objects\PKP_Food_Cherry</object>
+    <object>objects\PKP_FOOD_Cherry</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -49,7 +49,7 @@ HealAmount = 20;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>other.CurrentHp = min(other.CurrentHP + HealAmount, other.MaxHP);
+            <string>other.CurrentHP = min(other.CurrentHP + HealAmount, other.MaxHP);
 </string>
           </argument>
         </arguments>

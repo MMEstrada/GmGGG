@@ -259,12 +259,12 @@ depth = -1*GroundY;
 
 if(IsHit == false &amp;&amp; CurrentHP &gt; 0)
 {
-    if(AttackType == "Basic Punch")
+    if(AttackType == "BasicPunch")
     {
         sprite_index = SPR_PlayerBasicPunch;
         MyAttack = instance_create(x, y, ATK_BasicPunch);
     }
-    else if(AttackType == "Strong Punch")
+    else if(AttackType == "StrongPunch")
     {
         sprite_index = SPR_PlayerStrongPunch;
         MyAttack = instance_create(x, y, ATK_StrongPunch);
@@ -316,6 +316,29 @@ if(MyAttack != 0)
     IsAttacking = false;
     SpeedMod = 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_healthbar(20, 15, 100 + 100, 15 + 20, CurrentHP, c_black, c_red, c_green, 0, true, false);
 </string>
           </argument>
         </arguments>

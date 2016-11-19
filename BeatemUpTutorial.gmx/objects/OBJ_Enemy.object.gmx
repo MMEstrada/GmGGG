@@ -333,7 +333,7 @@ if(point_distance(x, y, TargetX, TargetY) &lt; 200 &amp;&amp; ds_list_size(OBJ_P
     }
     else
     {
-        sprite_attack = SPR_EnemyBasicPunch;
+        sprite_index = SPR_EnemyBasicPunch;
         MyAttack = instance_create(x,y,ATK_BasicPunch);
     }
     
@@ -502,17 +502,7 @@ switch(State)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1);
-draw_set_color(c_black);
-draw_rectangle(18,18,264,42,false);
-
-draw_set_color(c_maroon);
-draw_rectangle(20,20,262,40,false);
-
-if(CurrentHP &gt; 0)
-{
-    draw_rectangle_colour(20,20,20+242*(CurrentHP/MaxHP),40,c_green,c_lime,c_lime,c_green,false);
-}
+            <string>draw_healthbar(x-22, y - 117, x + 22, y + 10, CurrentHP/MaxHP * 100 + 20, c_black, c_red, c_green, 0, true, false);
 </string>
           </argument>
         </arguments>
@@ -541,8 +531,6 @@ draw_ellipse(x-40,y-8,x+40,y+8,false);
 
 draw_set_alpha(1);
 draw_self();
-
-draw_text(x,y,State);
 </string>
           </argument>
         </arguments>

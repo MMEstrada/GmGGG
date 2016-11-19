@@ -56,7 +56,8 @@
     <instance objName="OBJ_Enemy" x="1632" y="448" name="inst_429DF316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_Enemy" x="1632" y="640" name="inst_DA719855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_BattleRegion" x="1520" y="512" name="inst_9E9D05C2" locked="0" code="" scaleX="0.921875" scaleY="1.73958337306976" colour="4294967295" rotation="0"/>
-    <instance objName="PKP_Food_Cherry" x="2176" y="288" name="inst_7C2F7EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PKP_FOOD_Cherry" x="832" y="128" name="inst_191DBE2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PKP_FOOD_Cherry" x="2144" y="736" name="inst_4C9D2642" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
