@@ -502,7 +502,7 @@ switch(State)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_healthbar(x-22, y - 117, x + 22, y + 10, CurrentHP/MaxHP * 100 + 20, c_black, c_red, c_green, 0, true, false);
+            <string>draw_healthbar(x-22, y - 117, x + 22, y + 10, CurrentHP/MaxHP * 100, c_black, c_red, c_green, 0, true, false);
 </string>
           </argument>
         </arguments>
