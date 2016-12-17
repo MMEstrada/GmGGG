@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>130</xorig>
-  <yorigin>356</yorigin>
+  <yorigin>350</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -33,5 +33,6 @@
     <frame index="10">images\GertrudeRight_10.png</frame>
     <frame index="11">images\GertrudeRight_11.png</frame>
     <frame index="12">images\GertrudeRight_12.png</frame>
+    <frame index="13">images\GertrudeRight_13.png</frame>
   </frames>
 </sprite>

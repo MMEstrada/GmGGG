@@ -10,15 +10,21 @@
     <sprite>sprites\GertrudeRight</sprite>
     <sprite>sprites\GertrudeLeft</sprite>
     <sprite>sprites\EagleIdle</sprite>
+    <sprite>sprites\LavaGatorIdle</sprite>
+    <sprite>sprites\LavaGatorWalking</sprite>
+    <sprite>sprites\LavaGatorChomp</sprite>
+    <sprite>sprites\LavaGatorFire</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\LobbyFloor</background>
-    <background>background\LobbyBackground</background>
+    <background>background\LobbyWall</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Gertrude</object>
     <object>objects\Eagle</object>
+    <object>objects\LavaGator</object>
+    <object>objects\LobbyWalls</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Lobby</room>
