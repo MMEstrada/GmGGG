@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\GertrudeIdle</sprite>
+    <sprite>sprites\GertrudeIdleRight</sprite>
     <sprite>sprites\GertrudeRight</sprite>
     <sprite>sprites\GertrudeLeft</sprite>
     <sprite>sprites\EagleIdle</sprite>
@@ -14,6 +14,7 @@
     <sprite>sprites\LavaGatorWalking</sprite>
     <sprite>sprites\LavaGatorChomp</sprite>
     <sprite>sprites\LavaGatorFire</sprite>
+    <sprite>sprites\Wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\LobbyFloor</background>
