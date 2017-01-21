@@ -29,6 +29,7 @@
 SpeedMod = 1;
 XSpeed = 0;
 YSpeed = 0;
+FacingLeft = false;
 
 IsAttacking = false;
 AttackType = 0;
@@ -68,10 +69,12 @@ image_speed = .2;
     if (keyboard_check(ord('A')))
     {
         XSpeed = -1*Speed;
+        FacingLeft = true;
     }
     else if (keyboard_check(ord('D')))
     {
         XSpeed = Speed;
+        FacingLeft = false;
     }
     
     YSpeed = 0;
@@ -108,13 +111,21 @@ image_speed = .2;
         }
     }
     
-    if (XSpeed == 0 &amp;&amp; YSpeed == 0 &amp;&amp; OnGround == true)
+    if (/*FaceingLeft == false &amp;&amp; */XSpeed == 0 &amp;&amp; YSpeed == 0 &amp;&amp; OnGround == true)
     {
         SpeedMod = 1;
-        image_speed = 0.2
+        image_speed = 0.2;
         sprite_index = GertrudeIdleRight;
         
     }
+    /*
+    else if (FacingLeft == true &amp;&amp; XSpeed == 0 &amp;&amp; YSpeed == 0 &amp;&amp; OnGrounf == true)
+    {
+        SpeedMod = 1;
+        image_speed = 0.2;
+        sprite_index = GertrudeIdleLeft;
+    }
+    */
     else if (YSpeed != 0)
     {
         if (XSpeed &gt; 0 &amp;&amp; sprite_index != GertrudeRight &amp;&amp; OnGround == true)
@@ -180,9 +191,7 @@ depth = -1*GroundY;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if (rectangle_in_rectangle(Gertrude.x, Gertrude.y, Gertrude.x + 300, Gertrude.y + 400, 0, 600, 300, 800) == 2)
+            <string>if (collision_rectangle(0, 600, 300, 800, LobbyWalls, false, true) == true)
 {
     YSpeed = 0;
 }
@@ -214,8 +223,6 @@ draw_ellipse(x-40, y-8, x+40, y+8, false);
 
 draw_set_alpha(1);
 draw_self();
-
-draw_text (x, y, "Gertrude is here: " + x + ", " + y);
 </string>
           </argument>
         </arguments>
