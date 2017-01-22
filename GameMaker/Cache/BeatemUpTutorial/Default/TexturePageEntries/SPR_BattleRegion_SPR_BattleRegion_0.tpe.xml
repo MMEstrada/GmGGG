@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>1024</w>
+  <h>768</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>93058444</hash>
+  <xoffset>0</xoffset>
+  <yoffset>0</yoffset>
+  <cropWidth>1024</cropWidth>
+  <cropHeight>768</cropHeight>
+  <ow>1024</ow>
+  <oh>768</oh>
+  <image>SPR_BattleRegion_SPR_BattleRegion_0.tpe.png</image>
+</TPE>
