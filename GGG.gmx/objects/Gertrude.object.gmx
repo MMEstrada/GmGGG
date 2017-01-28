@@ -157,6 +157,11 @@ image_speed = .2;
             sprite_index = GertrudeLeft;
         }
     }
+    
+    if (point_in_rectangle(x, y, 0, 600, 300, 800))
+    {
+        YSpeed = 0;
+    }
 }
 else
 {
@@ -169,32 +174,6 @@ if (OnGround == true)
     }
     
 depth = -1*GroundY;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="LobbyWalls">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (collision_rectangle(0, 600, 300, 800, LobbyWalls, false, true) == true)
-{
-    YSpeed = 0;
-}
 </string>
           </argument>
         </arguments>
