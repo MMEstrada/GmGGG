@@ -15,6 +15,7 @@
     <sprite>sprites\LavaGatorChomp</sprite>
     <sprite>sprites\LavaGatorFire</sprite>
     <sprite>sprites\Wall</sprite>
+    <sprite>sprites\SPR_Camera</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\LobbyFloor</background>
@@ -26,6 +27,7 @@
     <object>objects\Eagle</object>
     <object>objects\LavaGator</object>
     <object>objects\LobbyWalls</object>
+    <object>objects\OBJ_Camera</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Lobby</room>

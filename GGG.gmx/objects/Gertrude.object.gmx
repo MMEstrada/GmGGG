@@ -41,6 +41,8 @@ OnGround = true;
 GroundY = y;
 
 image_speed = .2;
+
+MyCamera = instance_create(x, y, OBJ_Camera);
 </string>
           </argument>
         </arguments>
@@ -157,16 +159,16 @@ image_speed = .2;
             sprite_index = GertrudeLeft;
         }
     }
-    
-    if (point_in_rectangle(x, y, 0, 600, 300, 800))
-    {
-        YSpeed = 0;
-    }
 }
 else
 {
     instance_destroy();
 }
+
+if (point_in_rectangle(x, y, 0, 600, 300, 800))
+    {
+        YSpeed = 0;
+    }
 
 if (OnGround == true)
     {
