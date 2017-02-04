@@ -31,7 +31,20 @@
     <object>objects\OBJ_Enemy</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Lobby</room>
+    <room>rooms\Test_Lobby</room>
+    <rooms name="Level 1 - The Retirement Home">
+      <room>rooms\Opening_Hallway</room>
+      <room>rooms\Secondary_Hallway</room>
+      <room>rooms\Cafeteria</room>
+      <room>rooms\Kitchen</room>
+      <room>rooms\Chef_Attack_Hallwauy</room>
+      <room>rooms\Meat_Locker</room>
+      <room>rooms\Path_to_Lobby</room>
+      <room>rooms\Lobby</room>
+      <room>rooms\Sniper_Courtyard</room>
+      <room>rooms\Creaky_Bridge</room>
+      <room>rooms\Courtyard_Level_1_Boss</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
