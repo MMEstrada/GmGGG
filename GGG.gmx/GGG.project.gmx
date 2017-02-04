@@ -28,6 +28,7 @@
     <object>objects\LavaGator</object>
     <object>objects\LobbyWalls</object>
     <object>objects\OBJ_Camera</object>
+    <object>objects\OBJ_Enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Lobby</room>
