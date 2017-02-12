@@ -42,6 +42,25 @@ GroundY = y;
 
 image_speed = .2;
 
+PlayerHeight = sprite_height;
+PlayerWidth = sprite_width;
+PlayerLeftEdge = x - PlayerWidth/2;
+PlayerRightEdge = x + PlayerWidth/2;
+PlayerTopEdge = y - PlayerHeight/2;
+PlayerBottomEdge = y + PlayerHeight/2;
+
+show_message("Player Edges are: " + string(PlayerLeftEdge) + " " + string(PlayerRightEdge) + " " + string(PlayerTopEdge) + " " + string(PlayerBottomEdge));
+
+
+RoomX = room_width/2;
+RoomY = room_height/2;
+RoomLeftEdge = RoomX - room_width/2;
+RoomRightEdge = RoomX;
+RoomTopEdge = RoomY;
+RoomBottomEdge = RoomY + room_height/2;
+
+show_message("Room Edges are: " + string(RoomLeftEdge) + " " + string(RoomRightEdge) + " " + string(RoomTopEdge) + " " + string(RoomBottomEdge));
+
 MyCamera = instance_create(x, y, OBJ_Camera);
 </string>
           </argument>
@@ -178,11 +197,6 @@ MyCamera = instance_create(x, y, OBJ_Camera);
 else
 {
     instance_destroy();
-}
-
-if (point_in_rectangle(x, y + YSpeed * SpeedMod , 0, 600, 300, 800) == false || place_free(x, y + YSpeed * SpeedMod))
-{
-    YSpeed = 0;
 }
 
 if (OnGround == true)
