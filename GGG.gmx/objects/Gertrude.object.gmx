@@ -137,16 +137,23 @@ MyCamera = instance_create(x, y, OBJ_Camera);
         //image_xscale = 1;
         SpeedMod = 1;
         image_speed = 0.2;
+        if (FacingLeft == false)
+        {
+            image_xscale = 1;   
+        }
+        else //FacingLeft == true
+        {
+            image_xscale = -1;
+        }
         sprite_index = GertrudeIdle;
-        
-        if (image_index == GertrudeIdle &amp;&amp; FacingLeft == false)
+        /*if (image_index == GertrudeIdle &amp;&amp; FacingLeft == false)
         {
             image_xscale = 1;
         }
         else if (image_index == GertrudeIdle &amp;&amp; FacingLeft == true)
         {
             image_xscale = -1;
-        }
+        }*/
     }
     /*
     else if (FacingLeft == true &amp;&amp; XSpeed == 0 &amp;&amp; YSpeed == 0 &amp;&amp; OnGround == true)
@@ -161,21 +168,25 @@ MyCamera = instance_create(x, y, OBJ_Camera);
     {
         if (FacingLeft == false &amp;&amp; XSpeed &gt; 0 &amp;&amp; sprite_index != GertrudeRight &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeRight;
         }
         else if (FacingLeft == true &amp;&amp; XSpeed &lt; 0 &amp;&amp; sprite_index != GertrudeLeft &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeLeft;
         }
         else if (FacingLeft == false &amp;&amp; XSpeed == 0 &amp;&amp; sprite_index != GertrudeRight &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeRight;
         }
         else if (FacingLeft == true &amp;&amp; XSpeed == 0 &amp;&amp; sprite_index != GertrudeLeft &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeLeft;
         }
@@ -184,11 +195,13 @@ MyCamera = instance_create(x, y, OBJ_Camera);
     {
         if (FacingLeft == false &amp;&amp; XSpeed &gt; 0 &amp;&amp; sprite_index != GertrudeRight &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeRight;
         }
         else if (FacingLeft == true &amp;&amp; XSpeed &lt; 0 &amp;&amp; sprite_index != GertrudeLeft &amp;&amp; OnGround == true)
         {
+            image_xscale = 1;
             image_speed = 0.4;
             sprite_index = GertrudeLeft;
         }
