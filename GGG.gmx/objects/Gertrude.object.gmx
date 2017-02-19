@@ -113,6 +113,24 @@ MyCamera = instance_create(x, y, OBJ_Camera);
     
     if(IsAttacking == false &amp;&amp; IsHit == false)
     {
+        if (place_meeting(x + XSpeed*SpeedMod, y, OBJ_InvisibleWall))
+        {
+            while(!place_meeting(x + sign(XSpeed*SpeedMod), y, OBJ_InvisibleWall))
+            {
+                x += sign(XSpeed*SpeedMod);
+            }
+            XSpeed = 0;
+        }
+
+        if (place_meeting(x, y + YSpeed * SpeedMod, OBJ_InvisibleWall)) 
+        {
+            while(!place_meeting(x, y + sign(YSpeed * SpeedMod), OBJ_InvisibleWall))
+            {
+                y += sign(YSpeed * SpeedMod);
+            }
+            YSpeed = 0;
+        }
+        
         if (OnGround == true)
         {
             if (XSpeed != 0 &amp;&amp; YSpeed != 0)
@@ -210,43 +228,6 @@ if (OnGround == true)
 }
     
 depth = -1 * GroundY;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="LobbyWalls">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (CurrentHP &gt; 0)
-{    
-    YSpeed = 0;
-    if (OnGround == true)
-    {
-        if (keyboard_check(ord('W')))
-        {
-            YSpeed = 0;
-        }
-        else if (keyboard_check(ord('S')))
-        {
-            YSpeed = Speed;
-        }
-    }
-}
 </string>
           </argument>
         </arguments>

@@ -51,8 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="LobbyWalls" x="-64" y="-288" name="inst_5D59F848" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Gertrude" x="800" y="1472" name="inst_6C14964D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="-288" y="1984" name="inst_BEA17402" locked="0" code="" scaleX="50" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="-64" y="0" name="inst_A334FA42" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="4480" y="0" name="inst_D024D6A0" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="-64" y="640" name="inst_3E692FB1" locked="0" code="" scaleX="3.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="256" y="576" name="inst_EDC45EC3" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="672" y="640" name="inst_110486D6" locked="0" code="" scaleX="3.79999995231628" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_InvisibleWall" x="1056" y="384" name="inst_F897676A" locked="0" code="" scaleX="35" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

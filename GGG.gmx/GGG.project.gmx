@@ -16,7 +16,7 @@
     <sprite>sprites\LavaGatorFire</sprite>
     <sprite>sprites\Wall</sprite>
     <sprite>sprites\SPR_Camera</sprite>
-    <sprite>sprites\BoundingBox</sprite>
+    <sprite>sprites\SPR_InvisibleWall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\LobbyFloor</background>
@@ -31,7 +31,7 @@
     <object>objects\LobbyWalls</object>
     <object>objects\OBJ_Camera</object>
     <object>objects\OBJ_Enemy</object>
-    <object>objects\ColliderBox</object>
+    <object>objects\OBJ_InvisibleWall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Lobby</room>
