@@ -65,7 +65,9 @@ MyCamera = instance_create(x, y, OBJ_Camera);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (CurrentHP &gt; 0)
+            <string>MyBR = instance_nearest(x, y, OBJ_BattleRegion);
+
+if (CurrentHP &gt; 0)
 {
     XSpeed = 0;
     if (keyboard_check(ord('A')))
@@ -94,9 +96,9 @@ MyCamera = instance_create(x, y, OBJ_Camera);
     
     if(IsAttacking == false &amp;&amp; IsHit == false)
     {
-        if (place_meeting(x + XSpeed*SpeedMod, y, OBJ_InvisibleWall))
+        if (place_meeting(x + XSpeed * SpeedMod, y, OBJ_InvisibleWall))
         {
-            while(!place_meeting(x + sign(XSpeed*SpeedMod), y, OBJ_InvisibleWall))
+            while(!place_meeting(x + sign(XSpeed * SpeedMod), y, OBJ_InvisibleWall))
             {
                 x += sign(XSpeed*SpeedMod);
             }
@@ -110,6 +112,18 @@ MyCamera = instance_create(x, y, OBJ_Camera);
                 y += sign(YSpeed * SpeedMod);
             }
             YSpeed = 0;
+        }
+        
+        if (MyBR.IsActive == true)
+        {
+            if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge + 35, MyBR.TopEdge, My.BR.RightEdge - 35, MyBR.BottomEdge) == false || place_free(x + XSpeed * SpeedMod, y) == false)
+            {
+                XSpeed = 0;
+            }
+            if (point_in_rectangle(x, y + YSpeed * SpeedMod, MyBR.LeftEdge + 35, MyBR.TopEdge, My.BR.RightEdge - 35, MyBR.BottomEdge) == false || place_free(x, y + YSpeed * SpeedMod) == false)
+            {
+                YSpeed = 0;
+            }
         }
         
         if (OnGround == true)
