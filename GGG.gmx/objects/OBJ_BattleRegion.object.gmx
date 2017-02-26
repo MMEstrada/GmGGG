@@ -2,7 +2,7 @@
 <object>
   <spriteName>SPR_BattleRegion</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -89,7 +89,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (point_in_rectangle(Gertrude.x, Gertrude.y, Leftedge + abs(Gertrude.sprite_width)/2 + 10, TopEdge + 20, RightEdge - abs(Gertrude.sprite_width)/2 - 10, BottomEdge - 20) &amp;&amp; HasEnemies == true)
+            <string>if (point_in_rectangle(Gertrude.x, Gertrude.y, LeftEdge + abs(Gertrude.sprite_width)/2 + 10, TopEdge + 20, RightEdge - abs(Gertrude.sprite_width)/2 - 10, BottomEdge - 20) &amp;&amp; HasEnemies == true)
 {
     IsActive = true;
 }
