@@ -37,6 +37,7 @@
     <object>objects\OBJ_BattleRegion</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TestHallway</room>
     <room>rooms\Test_Lobby</room>
     <rooms name="Level 1 - The Retirement Home">
       <room>rooms\Opening_Hallway</room>
@@ -51,7 +52,6 @@
       <room>rooms\Creaky_Bridge</room>
       <room>rooms\Courtyard_Level_1_Boss</room>
     </rooms>
-    <room>rooms\TestHallway</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
