@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="Gertrude" x="512" y="928" name="inst_A7D10540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="OBJ_BattleRegion" x="2560" y="-320" name="inst_49A95BED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_BattleRegion" x="6080" y="-160" name="inst_49A95BED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_InvisibleWall" x="0" y="1984" name="inst_49EA9FB3" locked="0" code="" scaleX="64" scaleY="1.61616158485413" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_InvisibleWall" x="6400" y="2112" name="inst_A3760DCF" locked="0" code="" scaleX="1" scaleY="-21.4400005340576" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_InvisibleWall" x="5856" y="0" name="inst_E85CC1BB" locked="0" code="" scaleX="-58.560001373291" scaleY="2.88000011444092" colour="4294967295" rotation="0"/>
