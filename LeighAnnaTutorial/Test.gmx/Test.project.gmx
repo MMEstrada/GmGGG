@@ -23,6 +23,12 @@
     <sprite>sprites\SPR_PlayerStrongPunch</sprite>
     <sprite>sprites\SPR_EnemyWindUP</sprite>
     <sprite>sprites\SPR_Projectile</sprite>
+    <sprite>sprites\LavaGatorChomp</sprite>
+    <sprite>sprites\LavaGatorFire</sprite>
+    <sprite>sprites\LavaGatorIdle</sprite>
+    <sprite>sprites\LavaGatorWalking</sprite>
+    <sprite>sprites\SPR_LavaGatorChomp</sprite>
+    <sprite>sprites\SPR_LavaGatorFire</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -38,6 +44,9 @@
     <object>objects\OBJ_BattleRegion</object>
     <object>objects\ATK_WindUP</object>
     <object>objects\ATK_EnemyProjectile</object>
+    <object>objects\LavaGator</object>
+    <object>objects\ATK_LavaGatorChomp</object>
+    <object>objects\ATK_LavaGatorFire</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

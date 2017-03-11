@@ -43,6 +43,8 @@ GroundY = y;
 image_speed = .2;
 
 MyCamera = instance_create(x, y, OBJ_Camera);
+
+EnemyList = ds_list_create();
 </string>
           </argument>
         </arguments>

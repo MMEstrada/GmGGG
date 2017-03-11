@@ -45,7 +45,7 @@ State = "Inactive";
 SightRange = 350;
 
 Aggressiveness = 0;
-AttackRange = (sprite_width/2+Gertrude.sprite_width/2) + 25;
+AttackRange = (sprite_width/2+OBJ_Player.sprite_width/2)* 2;
 
 
 TargetX = x;
@@ -189,8 +189,8 @@ depth = -1 * GroundY;
             <kind>1</kind>
             <string>if(point_distance(x,y,TargetX,TargetY) &gt;= Speed){
     move_towards_point(TargetX,TargetY,Speed);
-    if(point_distance(x,y,TargetX,TargetY) &lt; 200 &amp;&amp; ds_list_size(Gertrude.EnemyList) &lt; 2 &amp;&amp; ds_list_find_index(Gertrude.EnemyList,id) == -1){
-        ds_list_add(Gertrude.EnemyList, id);
+    if(point_distance(x,y,TargetX,TargetY) &lt; 200 &amp;&amp; ds_list_size(OBJ_Player.EnemyList) &lt; 2 &amp;&amp; ds_list_find_index(OBJ_Player.EnemyList,id) == -1){
+        ds_list_add(OBJ_Player.EnemyList, id);
     }
 
 }else{
@@ -218,9 +218,9 @@ depth = -1 * GroundY;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(point_distance(TargetX,TargetY,Gertrude.x,Gertrude.y) &gt; AttackRange || point_distance(TargetX,TargetY,Gertrude.x,Gertrude.y) &lt; 50 || abs(TargetY-Gertrude.y) &gt; LayerSize || sign(TargetX-Gertrude.x) != sign(SideMod)){
-    TargetX = random_range(Gertrude.x+60*SideMod, Gertrude.x+90*SideMod);
-    TargetY = random_range(Gertrude.y-10, Gertrude.y+10);
+            <string>if(point_distance(TargetX,TargetY,OBJ_Player.x,OBJ_Player.y) &gt; AttackRange || point_distance(TargetX,TargetY,OBJ_Player.x,OBJ_Player.y) &lt; 50 || abs(TargetY-OBJ_Player.y) &gt; LayerSize || sign(TargetX-OBJ_Player.x) != sign(SideMod)){
+    TargetX = OBJ_Player.x+190*SideMod;
+    TargetY = OBJ_Player.y;
 }
 </string>
           </argument>
@@ -254,7 +254,7 @@ depth = -1 * GroundY;
         if(point_distance(x,y,TargetX,TargetY) &gt; 50){
             image_xscale = sign(TargetX-x);
         }else{
-            image_xscale = sign(Gertrude.x-TargetX);
+            image_xscale = sign(OBJ_Player.x-TargetX);
         }
         if(speed != 0){
             sprite_index = LavaGatorWalking;
@@ -271,7 +271,7 @@ depth = -1 * GroundY;
         if(point_distance(x,y,TargetX,TargetY) &gt; 150){
             image_xscale = sign(TargetX-x);
         }else{
-            image_xscale = sign(Gertrude.x-TargetX);
+            image_xscale = sign(OBJ_Player.x-TargetX);
         }
         
         if(speed != 0){
@@ -303,7 +303,7 @@ depth = -1 * GroundY;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(Gertrude.CurrentHP &gt; 0)
+            <string>if(OBJ_Player.CurrentHP &gt; 0)
 {
     AttackChance = random(100);
     
@@ -351,7 +351,7 @@ depth = -1 * GroundY;
             <kind>1</kind>
             <string>if(OnGround == true)
 {
-    if(distance_to_object(Gertrude) &lt;= AttackRange &amp;&amp; abs(y-Gertrude.y) &lt; LayerSize)
+    if(distance_to_object(OBJ_Player) &lt;= AttackRange &amp;&amp; abs(y-OBJ_Player.y) &lt; LayerSize)
     {
         Aggressiveness += .02;
         if(random(1) &lt; Aggressiveness*.03)
@@ -386,7 +386,7 @@ depth = -1 * GroundY;
 
 switch(State){
     case "Idle":
-        if(distance_to_object(Gertrude) &lt; SightRange){
+        if(distance_to_object(OBJ_Player) &lt; SightRange){
             if(MyAction &lt;= 50){
                 State = "PositionBehind";
             }else{
@@ -404,16 +404,16 @@ switch(State){
                 State = "PositionFront";
             }
         }
-        if(ds_list_size(Gertrude.EnemyList) &gt;= 2 &amp;&amp; ds_list_find_index(Gertrude.EnemyList,id) == -1){
+        if(ds_list_size(OBJ_Player.EnemyList) &gt;= 2 &amp;&amp; ds_list_find_index(OBJ_Player.EnemyList,id) == -1){
             State = "Queueing";
             speed = 0;
         }
         break;
         
     case "Queueing":
-        if(ds_list_size(Gertrude.EnemyList) &lt; 2){
-            ds_list_add(Gertrude.EnemyList, id);
-            if(x &lt; Gertrude.x){
+        if(ds_list_size(OBJ_Player.EnemyList) &lt; 2){
+            ds_list_add(OBJ_Player.EnemyList, id);
+            if(x &lt; OBJ_Player.x){
                 State = "PositionBehind";
             }else{
                 State = "PositionFront";

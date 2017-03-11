@@ -36,7 +36,7 @@ DMGFrame = 3;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Orderly">
+    <event eventtype="4" ename="OBJ_Enemy">
       <action>
         <libid>1</libid>
         <id>603</id>

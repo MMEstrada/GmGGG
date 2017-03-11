@@ -18,6 +18,8 @@
     <sprite>sprites\SPR_Camera</sprite>
     <sprite>sprites\SPR_InvisibleWall</sprite>
     <sprite>sprites\SPR_BattleRegion</sprite>
+    <sprite>sprites\SPR_LavaGatorChomp</sprite>
+    <sprite>sprites\SPR_LavaGatorFire</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\LobbyFloor</background>
@@ -35,6 +37,9 @@
     <object>objects\OBJ_Enemy</object>
     <object>objects\OBJ_InvisibleWall</object>
     <object>objects\OBJ_BattleRegion</object>
+    <object>objects\ATK</object>
+    <object>objects\ATK_LavaGatorChomp</object>
+    <object>objects\ATK_LavaGatorFire</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestHallway</room>
