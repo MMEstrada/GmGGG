@@ -10,6 +10,7 @@
     <sprite>sprites\GertrudeRight</sprite>
     <sprite>sprites\GertrudeLeft</sprite>
     <sprite>sprites\EagleIdle</sprite>
+    <sprite>sprites\EagleWalking</sprite>
     <sprite>sprites\LavaGatorIdle</sprite>
     <sprite>sprites\LavaGatorWalking</sprite>
     <sprite>sprites\LavaGatorChomp</sprite>
