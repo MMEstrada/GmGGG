@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>leftLimit = x - (sprite_width/2) + (image_xscale*25);
 rightLimit = x + (sprite_width/2) - (image_xscale*25);
+var action;
 
 a = instance_create(x, y, obj_hslider);
 a.image_xscale = image_xscale;
@@ -35,13 +36,12 @@ a.barLength = sprite_width;
 a.rightLimit = rightLimit;
 a.leftLimit = leftLimit;
 a.x = leftLimit;
-var action;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,9 +58,14 @@ var action;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_x &gt; leftLimit) &amp;&amp; (mouse_x &lt; rightLimit)
+            <string>a.action = action;
+
+if(mouse_check_button_pressed(mb_left))
 {
-    a.x = mouse_x;
+    if(mouse_x &gt; leftLimit) &amp;&amp; (mouse_x &lt; rightLimit)
+    {
+        a.x = mouse_x;
+    }
 }
 </string>
           </argument>

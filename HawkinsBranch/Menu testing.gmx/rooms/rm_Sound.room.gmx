@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>10485760</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.ingame = 0;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -54,7 +54,7 @@
     <instance objName="obj_button" x="128" y="480" name="inst_4F0BBC80" locked="0" code="action = 4;&#xA;text = &quot;Back&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hbar" x="448" y="224" name="inst_E314B1A6" locked="0" code="action = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hbar" x="448" y="352" name="inst_6950A37A" locked="0" code="action = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hbar" x="448" y="96" name="inst_BA0C9682" locked="0" code="action = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hbar" x="448" y="96" name="inst_BA0C9682" locked="0" code="action = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menutext" x="128" y="96" name="inst_A1BE03BA" locked="0" code="text = &quot;SFX&quot;;&#xA;" scaleX="0.625" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="obj_menutext" x="128" y="224" name="inst_0A9B840C" locked="0" code="text = &quot;Music&quot;;&#xA;" scaleX="0.625" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="obj_menutext" x="128" y="352" name="inst_0ED4D450" locked="0" code="text = &quot;Dialouge&quot;;&#xA;" scaleX="0.625" scaleY="0.625" colour="4294967295" rotation="0"/>

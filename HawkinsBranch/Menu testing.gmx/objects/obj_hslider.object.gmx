@@ -28,6 +28,7 @@
             <string>xx = 0;
 grab = false
 percentage = 0;
+var action;
 image_speed = 0;
 </string>
           </argument>
@@ -53,12 +54,20 @@ image_speed = 0;
             <kind>1</kind>
             <string>if(!mouse_check_button(mb_left))
 {
-    grab = false;
-    image_index = 0;
+    grab = false;;
 }
-
+if(mouse_check_button_pressed(mb_left) &amp;&amp; position_meeting(mouse_x, mouse_y, self))
+{
+    grab = true;
+    xx = x - mouse_x;
+}
+if(mouse_check_button_released(mb_left) &amp;&amp; position_meeting(mouse_x, mouse_y, self))
+{
+    grab = false;
+}
 if (grab = false)
 {
+    image_index = 0;
     exit;
 }
 
@@ -78,55 +87,6 @@ else
 }
 
 percentage = round(((x-leftLimit)/(rightLimit-leftLimit)) * 100)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>grab = false;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>grab = true;
-
-xx = x - mouse_x;
 </string>
           </argument>
         </arguments>

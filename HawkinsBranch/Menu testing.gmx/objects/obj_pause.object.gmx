@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>screen_save("pauseBackground.png");
+center_x = OBJ_Camera.x;
+center_y = OBJ_Camera.y
 instance_deactivate_all(true);
 pauseBackground = sprite_add("pauseBackground.png", 1, false, false, 0, 0);
 </string>
@@ -86,7 +88,7 @@ pauseBackground = sprite_add("pauseBackground.png", 1, false, false, 0, 0);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -103,13 +105,13 @@ pauseBackground = sprite_add("pauseBackground.png", 1, false, false, 0, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(pauseBackground, 1, 0, 0);
+            <string>draw_sprite(pauseBackground, 1, 0-25, 0);
 draw_set_color(c_black);
 draw_set_alpha(0.6);
-draw_rectangle(view_xport[0], view_yport[0], view_wview[0], view_hview[0], 0);
+draw_rectangle(0, 0, 1024, 768, 0);
 draw_set_alpha(1);
 draw_set_color(c_white);
-draw_text(view_wview[0]/2, view_hview[0]/2, "Paused");
+draw_text(512, 284, "Paused");
 draw_set_color(c_black);
 
 </string>

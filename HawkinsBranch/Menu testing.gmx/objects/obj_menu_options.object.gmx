@@ -110,23 +110,23 @@ with (obj_button)
 with(obj_hbar)
 {
     var hover = false;
-    if(position_meeting(mouse_x, mouse_y, a))
+    if(position_meeting(mouse_x, mouse_y, self.a))
     {
         hover = true;
         obj_menu_options.mpos = action;
     }
-    else if(!position_meeting(mouse_x, mouse_y, a) &amp;&amp; hover)
+    else if(!position_meeting(mouse_x, mouse_y, self.a) &amp;&amp; hover)
     {
         hover = false;
     }
-    
+
     if(action == obj_menu_options.mpos)
     {
-        a.grab = true;
+        self.a.grab = true;
     }
     else
     {
-        a.grab = false;
+        self.a.grab = false;
     }
 }
 
