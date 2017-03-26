@@ -230,6 +230,108 @@ depth = -1 * GroundY;
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="12">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var MyAttack = 0;
+
+if(IsHit == false &amp;&amp; CurrentHP &gt; 0)
+{
+    if (AttackType == "BasicPunch")
+    {
+        sprite_index = SPR_GertrudeBasic;
+        MyAttack = instance_create(x, y, ATK_Basic);
+    }
+}
+
+if (MyAttack != 0)
+{
+    SpeedMod = 0;
+    IsAttacking = true;
+    MyAttack.image_xscale = image_xscale;
+    MyAttack.image_speed = image_speed;
+    MyAttack.Owner = "Player";
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (IsAttacking == true)
+{
+    IsAttacking = false;
+    SpeedMod = 1;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_alpha(1);
+draw_set_color(c_black);
+draw_rectangle(18, 18, 264, 42, false);
+
+draw_set_color(c_maroon);
+draw_rectangle(20, 20, 262, 40, false);
+
+if (CurrentHP &gt; 0)
+{
+    draw_rectangle_colour(20, 20, 20+242*(CurrentHP/MaxHP), 40, c_green, c_lime, c_lime, c_green, false);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -253,6 +355,44 @@ draw_ellipse(x-40, y-8, x+40, y+8, false);
 
 draw_set_alpha(1);
 draw_self();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>AttackType = "";
+
+if (keyboard_check(vk_numpad4) || keyboard_check(ord('J')) || keyboard_check(vk_left))
+{
+    AttackType = "Basic Punch";
+}
+
+if (keyboard_check(vk_numpad8) || keyboard_check(ord('I')) || keyboard_check(vk_up))
+{
+    AttackType = "Strong Punch";
+}
+
+if (OnGround == true)
+{
+    event_user(2);
+}
 </string>
           </argument>
         </arguments>

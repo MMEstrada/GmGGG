@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -1*y;
+            <string>depth = -1 * y;
 
 Damage = 10;
 StunLength = 4;
@@ -58,6 +58,8 @@ DMGFrame = 3;
     other.State = "Hit";
     other.alarm[0] = StunLength;  
 }
+
+IsHit = true;
 </string>
           </argument>
         </arguments>
@@ -85,6 +87,8 @@ DMGFrame = 3;
     other.IsHit = true;
     other.alarm[3] = StunLength;    
 }
+
+IsHit = true;
 </string>
           </argument>
         </arguments>

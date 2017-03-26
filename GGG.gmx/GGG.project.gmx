@@ -41,6 +41,8 @@
     <object>objects\ATK</object>
     <object>objects\ATK_LavaGatorChomp</object>
     <object>objects\ATK_LavaGatorFire</object>
+    <object>objects\ATK_Basic</object>
+    <object>objects\ATK_Strong</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestHallway</room>
@@ -59,6 +61,9 @@
       <room>rooms\Courtyard_Level_1_Boss</room>
     </rooms>
   </rooms>
+  <constants number="1">
+    <constant name="LayerSize">35</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
