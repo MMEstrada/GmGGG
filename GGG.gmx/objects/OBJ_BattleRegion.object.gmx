@@ -93,7 +93,7 @@ else
 {
     if (other.State == "Inactive")
     {
-        other.State == "Idle";
+        other.State = "Idle";
     }
 }
 </string>

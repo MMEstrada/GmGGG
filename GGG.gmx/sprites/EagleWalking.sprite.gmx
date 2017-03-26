@@ -2,13 +2,13 @@
 <sprite>
   <type>0</type>
   <xorig>145</xorig>
-  <yorigin>218</yorigin>
+  <yorigin>220</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>19</bbox_left>
-  <bbox_right>304</bbox_right>
+  <bbox_left>12</bbox_left>
+  <bbox_right>300</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>387</bbox_bottom>
   <HTile>0</HTile>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>305</width>
+  <width>308</width>
   <height>390</height>
   <frames>
     <frame index="0">images\EagleWalking_0.png</frame>
