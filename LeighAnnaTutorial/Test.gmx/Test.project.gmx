@@ -29,6 +29,8 @@
     <sprite>sprites\LavaGatorWalking</sprite>
     <sprite>sprites\SPR_LavaGatorChomp</sprite>
     <sprite>sprites\SPR_LavaGatorFire</sprite>
+    <sprite>sprites\SPR_Sniper</sprite>
+    <sprite>sprites\SPR_SecondProjectile</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,9 +46,12 @@
     <object>objects\OBJ_BattleRegion</object>
     <object>objects\ATK_WindUP</object>
     <object>objects\ATK_EnemyProjectile</object>
+    <object>objects\ATK_ProjectileSplit</object>
     <object>objects\LavaGator</object>
     <object>objects\ATK_LavaGatorChomp</object>
     <object>objects\ATK_LavaGatorFire</object>
+    <object>objects\OBJ_Sniper</object>
+    <object>objects\ATK_RandomProjectiles</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
