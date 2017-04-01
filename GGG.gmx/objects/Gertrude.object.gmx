@@ -251,10 +251,15 @@ depth = -1 * GroundY;
 
 if(IsHit == false &amp;&amp; CurrentHP &gt; 0)
 {
-    if (AttackType == "BasicPunch")
+    if (AttackType == "Basic Punch")
     {
         sprite_index = SPR_GertrudeBasic;
         MyAttack = instance_create(x, y, ATK_Basic);
+    }
+    else if (AttackType == "Strong Punch")
+    {
+        sprite_index = SPR_GertrudeStrong;
+        MyAttack = instance_create(x, y, ATK_Strong);
     }
 }
 
