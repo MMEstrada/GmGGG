@@ -43,6 +43,9 @@
     <object>objects\ATK_LavaGatorFire</object>
     <object>objects\ATK_Basic</object>
     <object>objects\ATK_Strong</object>
+    <object>objects\OBJ_EnemyIntern</object>
+    <object>objects\ATK_EnemyProjectile</object>
+    <object>objects\OBJ_Sniper</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TestHallway</room>
