@@ -1,0 +1,25 @@
+Converting GML script : ${project_dir}\objects\Gertrude\Step_0.gml
+Converted string : line 6 : 'A' -> "A"
+Converted string : line 11 : 'D' -> "D"
+Converted string : line 20 : 'W' -> "W"
+Converted string : line 24 : 'S' -> "S"
+
+Converting GML script : ${project_dir}\objects\Gertrude\KeyPress_1.gml
+Converted string : line 3 : 'J' -> "J"
+Converted string : line 8 : 'I' -> "I"
+
+Converting GML script : ${project_dir}\objects\OBJ_Camera\Create_0.gml
+Converted builtin : line 4 : view_hborder[0] = 512 -> __view_set( e__VW.HBorder, 0, 512 )
+Converted builtin : line 3 : view_vborder[0] = 384 -> __view_set( e__VW.VBorder, 0, 384 )
+Converted builtin : line 1 : view_object[0] = OBJ_Camera -> __view_set( e__VW.Object, 0, OBJ_Camera )
+Converted builtin : line 6 : view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+
+game speed set to 30
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script view/__view_get.gml
+added compatibility script __global_object_depths.gml
