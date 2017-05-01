@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0554356a-93ec-49d4-baa5-2e922c5be658",
+            "Value": {
+                "id": "0cfca888-0c02-4189-ae26-a144df819cf7",
+                "resourcePath": "sprites\\EagleWalk2\\EagleWalk2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "05830ebd-d720-4cc4-9bf0-27a23f68567b",
             "Value": {
                 "id": "29edfb81-30d7-408e-830d-27bcb24484f0",
