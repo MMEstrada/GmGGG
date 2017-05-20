@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "0554356a-93ec-49d4-baa5-2e922c5be658",
-            "Value": {
-                "id": "0cfca888-0c02-4189-ae26-a144df819cf7",
-                "resourcePath": "sprites\\EagleWalk2\\EagleWalk2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "05830ebd-d720-4cc4-9bf0-27a23f68567b",
             "Value": {
                 "id": "29edfb81-30d7-408e-830d-27bcb24484f0",
@@ -215,6 +207,14 @@
             }
         },
         {
+            "Key": "48ae473f-7402-4b17-b50f-4155ab354599",
+            "Value": {
+                "id": "a84f4de3-e5a5-4f79-a6bf-e1cf25ca1be3",
+                "resourcePath": "views\\48ae473f-7402-4b17-b50f-4155ab354599.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "494776db-5e32-4d21-9067-546cb02e44b9",
             "Value": {
                 "id": "d48e8bd2-a621-4ff4-915a-d2c386671325",
@@ -243,14 +243,6 @@
             "Value": {
                 "id": "c4a63a61-1d64-474e-aa46-ce7a50431ce8",
                 "resourcePath": "views\\54294efb-10b6-4aee-9c05-a16f851588f0.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "543beff0-3f37-4848-ae86-3e4c28ae0e1b",
-            "Value": {
-                "id": "d8ac2d7b-ad3f-4b3d-9684-3e89318d6cf0",
-                "resourcePath": "views\\543beff0-3f37-4848-ae86-3e4c28ae0e1b.yy",
                 "resourceType": "GMFolder"
             }
         },
