@@ -42,7 +42,7 @@
             "Key": "05830ebd-d720-4cc4-9bf0-27a23f68567b",
             "Value": {
                 "id": "29edfb81-30d7-408e-830d-27bcb24484f0",
-                "resourcePath": "sprites\\GertrudeIdle\\GertrudeIdle.yy",
+                "resourcePath": "sprites\\GertrudeIdleRight\\GertrudeIdleRight.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -148,6 +148,14 @@
                 "id": "4689cae7-db57-4a75-84e7-8d1f3bdcc42c",
                 "resourcePath": "views\\304ff95d-9b60-4728-86d2-397b36a755da.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "31a5d5a5-7095-4ab7-8783-6d95d91707be",
+            "Value": {
+                "id": "85ba8e9c-04c3-4717-85e4-ffece1a84693",
+                "resourcePath": "sprites\\GertrudeIdleLeft\\GertrudeIdleLeft.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "5ff5d3d4-57ba-47f5-9938-e752cfe469af",
+            "Value": {
+                "id": "13bd060e-fc38-4e69-98b7-7d70663abe20",
+                "resourcePath": "sprites\\GertrudeAttackRight\\GertrudeAttackRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "624b7865-29d4-46ed-bc27-b470238fc273",
             "Value": {
                 "id": "74e66e1b-e283-4ac5-8c37-d32b229d162c",
@@ -284,6 +300,14 @@
                 "id": "e431951f-7b9a-43bb-9417-b2cff98ed640",
                 "resourcePath": "views\\66f96da9-1d45-4d0f-a232-3470b1580f07.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "67362709-a092-4607-907d-af7765a578a3",
+            "Value": {
+                "id": "10d0843e-f679-406f-a4c3-e75da64d1479",
+                "resourcePath": "sprites\\EagleWalking2\\EagleWalking2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -587,6 +611,14 @@
             "Value": {
                 "id": "ab8fe590-7187-4102-9a40-d49c41577065",
                 "resourcePath": "sprites\\GertrudeLeft\\GertrudeLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db547c55-c97d-4ab2-8d68-47476c71bfc0",
+            "Value": {
+                "id": "f29b7b77-715f-436b-9a73-182cd247222e",
+                "resourcePath": "sprites\\SPR_GertrudeAttackRight\\SPR_GertrudeAttackRight.yy",
                 "resourceType": "GMSprite"
             }
         },
