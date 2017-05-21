@@ -71,14 +71,6 @@
             }
         },
         {
-            "Key": "18350435-c862-4aa9-8ffb-281151c207fe",
-            "Value": {
-                "id": "39864ebe-ffc4-476c-8bd4-942f6a59089c",
-                "resourcePath": "rooms\\Test_Lobby\\Test_Lobby.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "19260a09-796f-4d6f-824a-3c501b663000",
             "Value": {
                 "id": "7ec62586-b7eb-4fdb-8f89-b13bbaddde52",
