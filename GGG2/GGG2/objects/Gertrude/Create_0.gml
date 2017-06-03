@@ -19,3 +19,5 @@ MyCamera = instance_create(x, y, OBJ_Camera);
 
 EnemyList = ds_list_create();
 
+CommandList = ds_list_create();
+

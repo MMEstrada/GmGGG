@@ -31,12 +31,16 @@
     <sprite>sprites\SPR_LavaGatorFire</sprite>
     <sprite>sprites\SPR_Sniper</sprite>
     <sprite>sprites\SPR_SecondProjectile</sprite>
+    <sprite>sprites\SPR_Missile</sprite>
+    <sprite>sprites\SPR_GattlingBullet</sprite>
+    <sprite>sprites\SPR_GatlingGun</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\OBJ_Player</object>
     <object>objects\OBJ_Enemy</object>
+    <object>objects\OBJ_Boss</object>
     <object>objects\OBJ_EnemyIntern</object>
     <object>objects\OBJ_EnemyBrute</object>
     <object>objects\ATK</object>
@@ -52,6 +56,9 @@
     <object>objects\ATK_LavaGatorFire</object>
     <object>objects\OBJ_Sniper</object>
     <object>objects\ATK_RandomProjectiles</object>
+    <object>objects\ATK_Missile</object>
+    <object>objects\ATK_GatlingBullet</object>
+    <object>objects\OBJ_GatlingGun</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
