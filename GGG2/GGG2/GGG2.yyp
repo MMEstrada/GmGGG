@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "44e09237-d9d2-4571-8867-1913c5de36de",
+            "Value": {
+                "id": "fe3d077e-751b-4917-bda2-6622f6d28f99",
+                "resourcePath": "sprites\\GertrudeAttack1\\GertrudeAttack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "494776db-5e32-4d21-9067-546cb02e44b9",
             "Value": {
                 "id": "6e2f6239-87e8-41ba-a44f-4aed77fc29cf",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "a9e39ba0-a8f1-4c5e-9999-a99e2eb90683",
+            "Value": {
+                "id": "c02ac3ff-8ff3-4bf9-ace4-678031d0e68b",
+                "resourcePath": "sprites\\GertrudeAttack2\\GertrudeAttack2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "aaa8ea49-b2f2-4d9f-b3da-e8560b582c37",
             "Value": {
                 "id": "58b1ee8e-b5d3-4862-97aa-4dc0fbf3c11f",
@@ -444,6 +460,14 @@
                 "id": "049a1baf-d50d-4b8b-a7a9-47e41ff669e7",
                 "resourcePath": "objects\\ATK_Basic\\ATK_Basic.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "afb01f87-d22e-449d-8445-6745537b7c59",
+            "Value": {
+                "id": "d3988b14-5f75-44d6-a7ed-0e020a953e1b",
+                "resourcePath": "sprites\\GertrudeAttack3\\GertrudeAttack3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
